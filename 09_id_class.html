@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Div,Span, Id, and CLass</title>
+</head>
+<style>
+.enhance {
+  color: yellow;
+  background: black;
+}
+</style>
+<body>
+  <div id="main-header">
+    <h1>My Website</h1>
+    <p>A site About Me</p>
+  </div>
+    <ul id="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <!-- emmet trick div#about for automatic div id(put whatever for id) OR just #about for div -->
+    <div id="about">
+      <h3>About</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, debitis?</p>
+    </div>
+    <div id="contact">
+      <h3>Contact Me</h3>
+      <ul>
+        <li>Address: 50 Main st, Boston MA</li>
+        <li>Phone: 407-716-2455</li>
+        <li>Email: me@gmail.com</li>
+
+      </ul>
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; 2019 </p>
+    </div>
+<!-- Why use id and class
+ID is use for highly specific parts like...you wouldn't have two section as id:mainheader
+But for classes you could use for things like paragraphs since it's not as specific -->
+  
+<!-- Different between Div and Span
+Div= block level element
+Span= inline element
+
+example below-->
+<div>
+  <p>Lorem ipsum dolor <div class="enhance">sit amet consectetur adipisicing elit.</div> 
+    Perspiciatis nostrum eius, <span class="enhance">quibusdam iure architecto rem? 
+    Nostrum porro sunt consequatur?</span> Repellat.</p>
+</div>
+</body>
+</html>

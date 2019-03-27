@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms and Input</title>
+  
+</head>
+<body>
+  <!-- This all is a typical form -->
+  <form action="process.php">
+    <div>
+      <!-- for needs to match id of input -->
+     <!-- For text to be prefilled it upon page load use value attribute -->
+     
+      <label for="name">Name</label> <br>
+      <!-- Name is used for server side(php example) for values -->
+      <input type="text" id="name" name="name" value="John Doe">
+    </div>
+    <div>
+      <label for="email">Email</label> <br>
+      <!-- tpye email allows for client side validation that input needs to be email -->
+      <!-- Use placeholder attribute to have value text disappear upon clicking -->
+      <input type="email" id="email" name="email" placeholder="Enter an email"> 
+    </div>
+    <div>
+      <label for="message">Message</label><br>
+      <!-- cols allows for bigger space in message, rows is for more space vertically -->
+      <textarea name="message" id="message" cols="50" rows="5"></textarea>
+    </div>
+    <!-- This starts the select list-->
+    <div>
+      <label for="sex">Sex</label>
+      <select name="sex" id="sex">Sex
+      <!-- option creates the things you can select within the select list -->
+      <!-- For an option to be preselected on page load use attribute selected -->
+      <option value="">Male</option>
+      <option value="" selected>Female</option>
+      <option value="">Other</option>
+    </select>
+    </div>
+    <!-- Number portion of form -->
+    <div>
+      <label for="age">Age</label><br>
+      <input type="number" name="age" id="age" >
+    </div>
+    <!-- Date type of form -->
+    <div>
+      <label for="birthdate">birthdate</label> <br>
+      <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <!-- Radio buttons -->
+    <div>
+      <label for="membership">Membership</label><br>
+      <!-- If you want one item preselected on page load use checked attribute -->
+      <input type="radio" name="membership" value="simple" id="membership">Simple
+      <input type="radio" name="membership" value="standard" id="membership" checked>Standard
+      <input type="radio" name="membership" value="super" id="membership">Super
+    </div>
+    <!-- This is the radio portion of form -->
+    <div>
+      <label for="membership">I like..</label><br>
+      <!-- If you want one item preselected on page load use checked attribute -->
+      <!-- Shortcut: when you select something "like checkbox" things will highlight..hold ctrl then D to select things below -->
+      <input type="checkbox" name="likes" value="bike" id="likes">Bike
+      <input type="checkbox" name="likes" value="car" id="likes" checked>Car
+      <input type="checkbox" name="likes" value="train" id="likes">Train
+    </div>
+    <!-- Submit button portion of form -->
+    <div>
+      <input type="submit" value="Submit">
+      <!-- Other way is button tag -->
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
